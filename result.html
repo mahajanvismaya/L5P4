@@ -1,0 +1,34 @@
+<html>
+  <head>
+    <title>
+       Even Odd App By Kamal Sir
+    </title>
+<link rel="stylesheet" href="mystyle.css">
+  </head>
+   <body>
+  <center>
+    <div class="nav">
+        <a href="index.html">HOME</a>
+       <a href="about.html">ABOUT</a>
+     </div>
+
+   
+           <h1>Result Page</h1>
+           <h2 id="ans" style="border:none";>
+       <script>
+         let ans = document.getElementById("ans");
+         let res = localStorage.getItem("res");
+         if(res ==" "){
+         alert("Please enter number first...");
+         setTimeout(function(){
+             window.location.href="index.html";},5000);
+         }else{        
+         ans.innerHTML = "Sqaure= " +res;
+         }	
+       </script>
+     </center>
+
+  </body>
+
+</html>
+

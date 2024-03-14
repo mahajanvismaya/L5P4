@@ -1,0 +1,52 @@
+<html>
+<head>
+<title>
+     Even Odd App By Kamal Sir
+</title>
+<link rel="stylesheet" href="mystyle.css">
+<style>
+       
+</style>
+<script>
+
+   function find(){
+
+             event.preventDefault();
+             let num = document.getElementById("num");
+                        
+           if(num.value =="")
+{
+           alert("Please enter your number..");
+           ans.innerHTML = "";
+           num.focus();
+           return;
+  }
+            let n = parseFloat(num.value);
+            let r = n **2   
+            localStorage.setItem("res",r);
+            window.location.href="result.html";        
+           }
+</script>
+
+</head>
+   <body style="background-color:lightblue;">
+<center>
+    <div class="nav">
+       <a href="index.html">HOME</a>
+       <a href="about.html">ABOUT</a>
+</div>
+     
+           <h1>Square Finder App</h1>
+
+    <form onsubmit="find()">
+
+        <input type="number" placeholder="enter number" id="num"/>
+        <br><br>
+        <input type="submit" value="Find Sqaure" />
+        <br><br>
+     </form>
+  </center>
+
+</body>
+
+</html>
